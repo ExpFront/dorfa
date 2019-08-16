@@ -143,6 +143,10 @@ li:before {
 	color: #fff;
 }
 
+.label-for-select {
+	margin-top: 15px;
+}
+
 
 .label-for-select,
 .product-page__price-field {
@@ -209,6 +213,7 @@ li:before {
 	margin-top: 40px;
 }
 
+.cost__paragraph,
 .orderForm__paragraph,
 .price__paragraph {
 	font-size: 16px;
@@ -225,13 +230,15 @@ li:before {
 	margin-top: 25px;
 }
 
-.price__paragraph:last-of-type {
+.price__paragraph:last-of-type,
+.product-page__price {
 	text-align: right;
 }
 
 
 
 @media all and (max-width: 1240px) {
+
 	.product-page__card {
 		flex-direction: column;
 	}
@@ -260,8 +267,19 @@ li:before {
 		border-bottom-right-radius: 8px;
 	}
 
-	.product-page__intro-heading {
-		font-size: 20px;
+	.product-page__intro-content h1 {
+		font-size: 60px;
+		text-align: center;
+	}
+}
+
+
+@media all and (max-width: 660px) {
+	.product-page__intro-content ul {
+		flex-direction: column;
 	}
 
+	.product-page__intro-content li {
+		width: 100%;
+	}
 }
