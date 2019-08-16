@@ -167,6 +167,7 @@ a:hover {
 .label-for-input {
 	width: 45%;
 	margin-bottom: 20px;
+	display: inline-block;
 }
 
 .label-for-input:first-of-type {
