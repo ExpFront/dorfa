@@ -241,14 +241,12 @@ li:before {
 
 	.product-page__card {
 		flex-direction: column;
+		width: 100%;
+		padding: 0;
 	}
 
 	.product-page__intro {
 		padding: 120px 6% 60px;
-	}
-
-	.product-page__card {
-		padding: 0;
 	}
 
 	.product-page__intro-content,
@@ -281,5 +279,10 @@ li:before {
 
 	.product-page__intro-content li {
 		width: 100%;
+	}
+
+	.product-page__intro-content h1 {
+		font-size: 32px;
+		text-align: center;
 	}
 }

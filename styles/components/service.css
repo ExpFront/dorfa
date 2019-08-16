@@ -381,8 +381,9 @@
 	text-align: center;
 }
 
-.main-services__heading {
+.service .services .main-services__item h4 {
 	margin-top: 70px;
+	padding-bottom: 0;
 }
 
 .services__number {
