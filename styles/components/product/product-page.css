@@ -91,12 +91,12 @@
 	justify-content: space-between;
 }
 
-.product-page__intro-content li,
+.product-page__intro-content,
 .product-page__intro-content li:before {
 	transition: all .4s;
 }
 
-.product-page__intro-content li {
+ .product-page__intro-content li {
 	position: relative;
 	display: block;
 	max-width: 500px;
@@ -112,7 +112,7 @@
 	opacity: .8;
 }
 
-li:before {
+.product-page__intro-content li:before {
 	content: "";
 	position: absolute;
 	left:0;

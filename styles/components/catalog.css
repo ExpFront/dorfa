@@ -22,6 +22,11 @@
 		text-align: center;
 	}
 
+	.products--wrapper {
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
 	.catalog__heading {
 		font-size: 32px;
 	}
@@ -95,6 +100,7 @@
 		margin-right: 0;
 	}
 }
+
 
 .products {
 	position: relative;
