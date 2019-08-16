@@ -227,7 +227,7 @@ a:hover {
 	width: 40%;
 	margin-right: 20px;
 	margin-bottom: 20px;
-	display: block;
+	display: inline-block;
 }
 
 .label-for-radio:hover {
