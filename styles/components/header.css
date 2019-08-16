@@ -234,7 +234,8 @@
 	.nav-mobile__menu {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
+		padding-top: 80px;
 		min-height: 100vh;
 		position: absolute;
 		top: 0;
@@ -270,7 +271,8 @@
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 5px;
-		font-size: 1.25rem;
+		font-size: 20px;
+		line-height: 30px;
 		text-decoration: none;
 		padding: 1rem;
 	}
