@@ -1,0 +1,582 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<title>Оформление заказа — DORFA</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="./styles/components/cart/theme.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="./styles/main.css" type="text/css"  rel="stylesheet" />
+		<link href="./styles/components/header.css" type="text/css"  rel="stylesheet" />
+		<link href="./styles/components/cart/cart.css" type="text/css"  rel="stylesheet" />
+	</head>
+
+	<body class="template-cart">
+		<header class="header">
+			<div class="header__logo">
+				<a href="./index.html">
+					<img class="logo" src="./assets/images/logo.svg"/>
+				</a>
+			</div>
+
+			<nav id="nav-mobile" class="nav-mobile" role="navigation">
+				<ul class="nav-mobile__menu" id="nav-mobile-menu" tabindex="-1" aria-label="main navigation" hidden>
+					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Серверы</a></li>
+					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Конфигураторы</a></li>
+					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Blade</a></li>
+					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">СХД</a></li>
+					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Активное оборудование</a></li>
+				</ul>
+
+				<!-- MENU TOGGLE BUTTON -->
+				<a class="nav-mobile__toggle" role="button" aria-expanded="false" aria-controls="menu">
+					<svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+						<g>
+							<line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+							<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+							<line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+							<line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+							<circle class="menuicon__circle" r="23" cx="25" cy="25" />
+						</g>
+					</svg>
+				</a>
+
+				<!-- ANIMATED BACKGROUND ELEMENT -->
+				<div class="splash"></div>
+
+			</nav>
+
+
+			<div class="header__buttons">
+				<div class="header__button">
+					<a href="./products.html?filter=servers" class="js-main-slider-button button button--blue button--fulfill">Серверы</a>
+				</div>
+
+				<div class="header__button">
+					<a href="./products.html?filter=configurators" class="js-main-slider-button button button--blue button--fulfill">Конфигураторы</a>
+				</div>
+
+				<div class="header__button">
+					<a href="./products.html?filter=blade" class="js-main-slider-button button button--blue button--fulfill">Blade</a>
+				</div>
+
+				<div class="header__button">
+					<a href="./products.html?filter=storage-systems" class="js-main-slider-button button button--blue button--fulfill">СХД</a>
+				</div>
+
+				<div class="header__button">
+					<a href="./products.html?filter=hardware" class="js-main-slider-button button button--blue button--fulfill">Активное оборудование</a>
+				</div>
+
+				<a href="./cart.html" class="header__button header__button_with_icon">
+					<div class="header__icon" title="Заказ">
+						<img src="./assets/icons/cart.svg"/>
+					</div>
+					<span class="small-cart__count">3</span>
+				</a>
+
+				<!-- <div class="header__button header__button_with_icon">
+					<a href="/auth/?ajax=Y" class="header__icon" data-modal title="Личный кабинет">
+						<svg id="icon-user" viewBox="0 0 30 30" width="100%" height="100%">
+							<title>icon-user</title>
+							<g transform="translate(7 5)" stroke="#fff" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M16 18v-2a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v2"></path>
+								<circle cx="8" cy="4" r="4"></circle>
+							</g>
+						</svg>
+					</a>
+				</div> -->
+			</div>
+		</header>
+
+		<main id="site-main" class="site-main" aria-label="Main content" tabindex="-1">
+				 <div id="shopify-section-static-cart" class="shopify-section cart--section">
+						<form
+							action="/cart"
+							method="post"
+							aria-label="cart checkout"
+						>
+							<header class="cart-title">
+									<div class="cart-title-left">
+										<h1>Моя корзина</h1>
+										<div class="cart-title-total--small"></div>
+									</div>
+							</header>
+							<section class="cartitems--container ">
+									<div class="cartitems">
+										 <ul class="cartitems--list" data-cart-item-list>
+											 <li
+													class="cart-item"
+													data-cartitem
+													data-cartitem-id="43318672202"
+													data-cartitem-key="43318672202:5a3ebe86c13c2a5383b0161a1dddfeb3"
+													data-cartitem-price="99900">
+													<figure class="cart-item--image-wrapper">
+														 <a href="/products/phantom-3-professional?variant=43318672202">
+														 <img
+																src="https://servermall.ru/upload/resize_cache/iblock/e56/720_480_1/HP_DL360p_Gen8_hdd_8.png"
+																alt="Phantom 3 Professional"
+																data-rimg
+																srcset="https://servermall.ru/upload/resize_cache/iblock/e56/720_480_1/HP_DL360p_Gen8_hdd_8.png"
+																>
+														 </a>
+													</figure>
+													<div class="cart-item--inner">
+														 <div class="cart-item--content">
+																<h2 class="cart-item--content-title">
+																	 <a href="/products/phantom-3-professional?variant=43318672202">
+																	 1(2)x Intel Xeon Silver 4110 / 16GB (1x16GB) / noHDD (до 12 hdd 3.5&quot;) / P816i-a / 1x БП 800w
+																	 </a>
+																</h2>
+																<div class="cart-item--content-price">
+																	 <span class="cart-item--price-title">
+																	 Стоимость:
+																	 </span>
+																	 <span class="money">15 000 ₽
+																	 </span>
+															 </div>
+														 </div>
+														 <div class="cart-item--info">
+															 <div
+																	 class="cart-item--quantity form-fields--qty"
+																	 data-quantity-wrapper
+																	 >
+																	 <div class="form-field form-field--qty-select visible">
+																			<div class="form-field-select-wrapper">
+																				 <select
+																						class="form-field-input form-field-select form-field-filled"
+																						id="quantity"
+																						aria-label="Quantity"
+																						data-quantity-select
+																						data-cartitem-quantity
+																						onchange="calculateFinalCost(this, 0, 0, '15000');"
+																						>
+																						<option selected value="1">
+																							 1
+																						</option>
+																						<option value="2">
+																							 2
+																						</option>
+																						<option value="3">
+																							 3
+																						</option>
+																						<option value="4">
+																							 4
+																						</option>
+																						<option value="5">
+																							 5
+																						</option>
+																						<option value="6">
+																							 6
+																						</option>
+																						<option value="7">
+																							 7
+																						</option>
+																						<option value="8">
+																							 8
+																						</option>
+																						<option value="9">
+																							 9
+																						</option>
+																						<option value="10">
+																							 10
+																						</option>
+																				 </select>
+																				 <label class="form-field-title" for="quantity_Phantom_3_Professional">
+																					 Количество
+																				 </label>
+																				 <svg
+																						aria-hidden="true"
+																						focusable="false"
+																						role="presentation"
+																						xmlns="http://www.w3.org/2000/svg"
+																						width="8"
+																						height="6"
+																						viewBox="0 0 8 6"
+																						>
+																						<g fill="currentColor" fill-rule="evenodd">
+																							 <polygon class="icon-chevron-down-left" points="4 5.371 7.668 1.606 6.665 .629 4 3.365"/>
+																							 <polygon class="icon-chevron-down-right" points="4 3.365 1.335 .629 1.335 .629 .332 1.606 4 5.371"/>
+																						</g>
+																				 </svg>
+																			</div>
+																	 </div>
+																	 <div class="form-field form-field--qty-input hidden">
+																			<input
+																				 class="form-field-input form-field-number form-field-filled"
+																				 value="1"
+																				 name="updates[]"
+																				 id="updates"
+																				 type="text"
+																				 pattern="\d*"
+																				 tabindex="-1"
+																				 aria-label="Quantity"
+																				 data-quantity-input
+																				 data-cartitem-quantity>
+																		 <label class="form-field-title" for="updates_43318672202:5a3ebe86c13c2a5383b0161a1dddfeb3">
+																		 Количество
+																		 </label>
+																	 </div>
+																</div>
+																<div class="cart-item--total">
+																	 <span class="visually-hidden">Итоговая стоимость</span>
+																	 <div
+																		 class="money total"
+																		 aria-live="polite"
+																		 data-cartitem-total
+																	 >
+																			15 000 ₽
+																	 </div>
+																</div>
+																<div class="cart-item--remove">
+																	 <a
+																			href="/cart/change?line=1&amp;quantity=0"
+																			class="cart-item--remove-link"
+																			data-cartitem-remove
+																			aria-label="remove Phantom 3 Professional"
+																			>
+																			<svg
+																				 aria-hidden="true"
+																				 focusable="false"
+																				 role="presentation"
+																				 width="10"
+																				 height="10"
+																				 viewBox="0 0 10 10"
+																				 xmlns="http://www.w3.org/2000/svg"
+																				 >
+																				 <path d="M6.08785659,5 L9.77469752,1.31315906 L8.68684094,0.225302476 L5,3.91214341 L1.31315906,0.225302476 L0.225302476,1.31315906 L3.91214341,5 L0.225302476,8.68684094 L1.31315906,9.77469752 L5,6.08785659 L8.68684094,9.77469752 L9.77469752,8.68684094 L6.08785659,5 Z"></path>
+																			</svg>
+																	 </a>
+																</div>
+														 </div>
+													</div>
+											 </li>
+
+												<li
+													 class="cart-item"
+													 data-cartitem
+													 data-cartitem-id="43318672202"
+													 data-cartitem-key="43318672202:5a3ebe86c13c2a5383b0161a1dddfeb3"
+													 data-cartitem-price="99900">
+													 <figure class="cart-item--image-wrapper">
+															<a href="/products/phantom-3-professional?variant=43318672202">
+															<img
+																 src="https://servermall.ru/upload/resize_cache/iblock/e56/720_480_1/HP_DL360p_Gen8_hdd_8.png"
+																 alt="Phantom 3 Professional"
+																 data-rimg
+																 srcset="https://servermall.ru/upload/resize_cache/iblock/e56/720_480_1/HP_DL360p_Gen8_hdd_8.png"
+																 >
+															</a>
+													 </figure>
+													 <div class="cart-item--inner">
+															<div class="cart-item--content">
+																 <h2 class="cart-item--content-title">
+																		<a href="/products/phantom-3-professional?variant=43318672202">
+																		1(2)x Intel Xeon Silver 4110 / 16GB (1x16GB) / noHDD (до 12 hdd 3.5&quot;) / P816i-a / 1x БП 800w
+																		</a>
+																 </h2>
+																 <div class="cart-item--content-price">
+																		<span class="cart-item--price-title">
+																		Стоимость:
+																		</span>
+																		<span class="money">15 000 ₽
+																		</span>
+																</div>
+															</div>
+															<div class="cart-item--info">
+																<div
+																		class="cart-item--quantity form-fields--qty"
+																		data-quantity-wrapper
+																		>
+																		<div class="form-field form-field--qty-select visible">
+																			 <div class="form-field-select-wrapper">
+																					<select
+																						 class="form-field-input form-field-select form-field-filled"
+																						 id="quantity"
+																						 aria-label="Quantity"
+																						 data-quantity-select
+																						 data-cartitem-quantity
+																						 onchange="calculateFinalCost(this, 1, 2, '15000');"
+																						 >
+																						 <option selected value="1">
+																								1
+																						 </option>
+																						 <option value="2">
+																								2
+																						 </option>
+																						 <option value="3">
+																								3
+																						 </option>
+																						 <option value="4">
+																								4
+																						 </option>
+																						 <option value="5">
+																								5
+																						 </option>
+																						 <option value="6">
+																								6
+																						 </option>
+																						 <option value="7">
+																								7
+																						 </option>
+																						 <option value="8">
+																								8
+																						 </option>
+																						 <option value="9">
+																								9
+																						 </option>
+																						 <option value="10">
+																								10
+																						 </option>
+																					</select>
+																					<label class="form-field-title" for="quantity_Phantom_3_Professional">
+																						Количество
+																					</label>
+																					<svg
+																						 aria-hidden="true"
+																						 focusable="false"
+																						 role="presentation"
+																						 xmlns="http://www.w3.org/2000/svg"
+																						 width="8"
+																						 height="6"
+																						 viewBox="0 0 8 6"
+																						 >
+																						 <g fill="currentColor" fill-rule="evenodd">
+																								<polygon class="icon-chevron-down-left" points="4 5.371 7.668 1.606 6.665 .629 4 3.365"/>
+																								<polygon class="icon-chevron-down-right" points="4 3.365 1.335 .629 1.335 .629 .332 1.606 4 5.371"/>
+																						 </g>
+																					</svg>
+																			 </div>
+																		</div>
+																		<div class="form-field form-field--qty-input hidden">
+																			 <input
+																					class="form-field-input form-field-number form-field-filled"
+																					value="1"
+																					name="updates[]"
+																					id="updates"
+																					type="text"
+																					pattern="\d*"
+																					tabindex="-1"
+																					aria-label="Quantity"
+																					data-quantity-input
+																					data-cartitem-quantity>
+																			<label class="form-field-title" for="updates_43318672202:5a3ebe86c13c2a5383b0161a1dddfeb3">
+																			Количество
+																			</label>
+																		</div>
+																 </div>
+																 <div class="cart-item--total">
+																		<span class="visually-hidden">Итоговая стоимость</span>
+																		<div
+																			class="money total"
+																			aria-live="polite"
+																			data-cartitem-total
+																		>
+																			 15 000 ₽
+																		</div>
+																 </div>
+																 <div class="cart-item--remove">
+																		<a
+																			 href="/cart/change?line=1&amp;quantity=0"
+																			 class="cart-item--remove-link"
+																			 data-cartitem-remove
+																			 aria-label="remove Phantom 3 Professional"
+																			 >
+																			 <svg
+																					aria-hidden="true"
+																					focusable="false"
+																					role="presentation"
+																					width="10"
+																					height="10"
+																					viewBox="0 0 10 10"
+																					xmlns="http://www.w3.org/2000/svg"
+																					>
+																					<path d="M6.08785659,5 L9.77469752,1.31315906 L8.68684094,0.225302476 L5,3.91214341 L1.31315906,0.225302476 L0.225302476,1.31315906 L3.91214341,5 L0.225302476,8.68684094 L1.31315906,9.77469752 L5,6.08785659 L8.68684094,9.77469752 L9.77469752,8.68684094 L6.08785659,5 Z"></path>
+																			 </svg>
+																		</a>
+																 </div>
+															</div>
+													 </div>
+												</li>
+										 </ul>
+									</div>
+
+
+							 </section>
+						</form>
+				 </div>
+			</main>
+
+			<section class="order">
+				<h1 class="order__heading">
+					Оформление заказа
+				</h1>
+
+				<form id="orderForm" class="order__form">
+					<div class="form__blocks">
+						<div class="form__block">
+							<h2 class="block__heading">
+								<span class="block__number">1.</span>
+								Укажите ваши личные данные
+							</h2>
+
+							<div class="form__inputs">
+
+								<label class="label-for-input">
+									<p class="input__text">
+										Email
+										<span class="star">*</span>
+									</p>
+
+									<input class="email-input" type="email" placeholder="Email" required />
+								</label>
+
+								<label class="label-for-input">
+									<p class="input__text">
+										Телефон
+										<span class="star">*</span>
+									</p>
+
+									<!-- <input minlength="2" class="name-input" type="text" placeholder="Имя" required /> -->
+									<input class="phone-input" name="phoneRUS" data-mask="+7 (000) 000 00 00" placeholder="+7 (___) ___ __ __" required />
+								</label>
+
+								<label class="label-for-input">
+									<p class="input__text">
+										Имя
+										<span class="star">*</span>
+									</p>
+
+									<input minlength="2" class="name-input" type="text" placeholder="Имя" required />
+								</label>
+							</div>
+						</div>
+
+						<div class="form__block">
+							<h2 class="block__heading">
+								<span class="block__number">2.</span>
+								Как вам будет удобнее оплатить заказ?
+							</h2>
+
+							<fieldset id="radio-group-pay" class="form__radios" >
+								<input type="radio" id="withoutNDS" name="radio-group-pay" checked>
+								<label class="label-for-radio" for="withoutNDS">
+									<p class="radio__text">Безналичный расчёт без НДС </p>
+								</label>
+
+								<input type="radio" id="withNDS" name="radio-group-pay">
+								<label class="label-for-radio" for="withNDS">
+									<p class="radio__text">Безналичный расчёт c НДС</p>
+								</label>
+
+								<input type="radio" id="eMoney" name="radio-group-pay">
+								<label class="label-for-radio" for="eMoney">
+									<p class="radio__text">Электронными деньгами</p>
+								</label>
+
+								<input type="radio" id="creditCards" name="radio-group-pay">
+								<label class="label-for-radio" for="creditCards">
+									<p class="radio__text">Банковскими картами</p>
+								</label>
+							<fieldset>
+
+						</div>
+
+						<div class="form__block">
+							<h2 class="block__heading">
+								<span class="block__number">3.</span>
+								Предоставьте реквизиты компании
+								<span class="block__number">(необязательно)</span>
+							</h2>
+
+							<fieldset class="form__radios" id="radio-rekvisit">
+
+								<label class="label-for-input">
+									<p class="input__text">
+										Наименование организации
+									</p>
+
+									<input class="company-input" type="text" placeholder="Наименование организации" />
+								</label>
+
+								<label class="label-for-input">
+									<p class="input__text">
+										Юридический адрес
+									</p>
+
+									<input class="address-input" type="text" placeholder="Юридический адрес" />
+								</label>
+
+								<label class="label-for-input">
+									<p class="input__text">
+										ИНН/КПП
+									</p>
+
+									<input class="inn-input" type="text" placeholder="ИНН/КПП" />
+								</label>
+
+								<!-- <input type="radio" id="manuallyRekvisitUpload" name="radio-rekvisit" checked>
+								<label class="label-for-radio" for="manuallyRekvisitUpload">
+									<p class="radio__text">Заполнить вручную</p>
+								</label>
+
+								<input type="radio" id="fileRekvisitUpload" name="radio-rekvisit">
+								<label class="label-for-radio" for="fileRekvisitUpload">
+									<p class="radio__text">Загрузить файл</p>
+								</label> -->
+
+							</fieldset>
+						</div>
+
+						<div class="form__block">
+							<h2 class="block__heading">
+								<span class="block__number">4.</span>
+								Оставьте комментарий к заказу
+								<span class="block__number">(необязательно)</span>
+							</h2>
+
+							<div class="form__radios">
+								<textarea
+									class="form__comment"
+									rows="3"
+									placeholder="Пример: «Звоните во второй половине дня...»"></textarea>
+							</div>
+						</div>
+
+
+						<div class="form__submit-field">
+							<p class="submit__text">
+								Итого к оплате: <b class="submit__total">16 990 ₽</b>
+							</p>
+							<button type="submit" class="l-button button button--blue button--fulfill form__submit">Оформить заказ</button>
+						</div>
+
+					</div>
+
+				</form>
+				<div class="sideblock">
+					<p class="sideblock__text">
+						<img class="sideblock__icon" src="./assets/icons/cart.svg"/>
+						Ваш заказ
+					</p>
+
+					<div class="sideblock__count">
+						<p>Количество товаров:</p>
+						<p class="sideblock__count-text">4 шт.</p>
+					</div>
+
+					<div class="sideblock__sum">
+						<p>Итого к оплате:</p>
+						<p class="sideblock__total">16 990 ₽</p>
+					</div>
+
+				</div>
+			</section>
+
+			<script src="./scripts/jquery-1.11.2.min.js"></script>
+			<script src="./scripts/nav-mobile.js"></script>
+			<script src="./scripts/cart/jquery.mask.js"></script>
+			<script src="./scripts/cart/validate.min.js"></script>
+			<script src="./scripts/cart/cart.js"></script>
+	 </body>
+</html>

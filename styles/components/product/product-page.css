@@ -1,0 +1,267 @@
+* {
+	box-sizing: border-box;
+}
+
+.product-page__intro {
+	background: #fff;
+	padding: 160px 8% 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: space-between;
+}
+
+.product-page__intro-gallery,
+.product-page__intro-content {
+	width: 50%;
+	text-align: center;
+}
+
+.product-page__intro-gallery {
+	position: relative;
+	margin-right: 80px;
+}
+
+
+.product-page__carousel__nav {
+	bottom: calc(50% - 30px) !important;
+}
+
+
+.product-page__card {
+	border-radius: 10px;
+	background: #0090f0;
+	background: linear-gradient(to bottom, #0090f0 70%, #69c3fe 100%);
+	box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+	display: flex;
+}
+
+.product-page__intro {
+	padding-bottom: 55px;
+}
+
+.product-page__intro-gallery {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	padding: 70px 30px 30px 30px;
+}
+
+.product-page__intro-img-field {
+	margin-top: 40px;
+	padding: 20px;
+	/* height: 200px; */
+	height: auto;
+	background: #fff;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+}
+
+.product-page__intro-gallery img {
+	width: 100%;
+}
+
+.product-page__intro-content {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background: #fff;
+	padding: 20px 40px 50px;
+	width: 60%;
+}
+
+.product-page__intro-content h1 {
+	font-weight: 600;
+	text-align: left;
+	font-size: 40px;
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	letter-spacing: 2px;
+	color: #000;
+}
+
+
+.product-page__intro-content ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product-page__intro-content li,
+.product-page__intro-content li:before {
+	transition: all .4s;
+}
+
+.product-page__intro-content li {
+	position: relative;
+	display: block;
+	max-width: 500px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	color: #000;
+	text-decoration: none;
+	width: 48%;
+	text-align: left;
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 20px;
+	opacity: .8;
+}
+
+li:before {
+	content: "";
+	position: absolute;
+	left:0;
+	bottom:0;
+	top:0;
+	width: 20px;
+	background: #0090f0;
+}
+
+
+.product-page__intro-paragraph {
+	color: white;
+	font-size: 12px;
+	padding: 0 30px 0 40px;
+	letter-spacing: 1px;
+	margin: 40px 0 10px 0;
+	line-height: 20px;
+	text-align: left;
+}
+
+
+.product-page__button {
+	margin-top: 30px;
+}
+
+
+.product-page__intro-heading {
+	color: #fff;
+}
+
+
+.label-for-select,
+.product-page__price-field {
+	position: relative;
+	min-width: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.label-for-select svg {
+	position: absolute;
+	right: 12px;
+	top: calc(50% - 3px);
+	width: 10px;
+	height: 6px;
+	stroke-width: 2px;
+	stroke: #9098a9;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	pointer-events: none;
+}
+
+.select {
+	-webkit-appearance: none;
+	padding: 7px 40px 7px 12px;
+	width: 30%;
+	border: 1px solid #e8eaed;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 1px 3px -2px #9098a9;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 150ms ease;
+}
+.select:required:invalid {
+	color: #5a667f;
+}
+.select option {
+	color: #223254;
+}
+.select option[value=""][disabled] {
+	display: none;
+}
+.select:focus {
+	outline: none;
+	border-color: #07f;
+	box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+}
+.select:hover + svg {
+	stroke: #07f;
+}
+.sprites {
+	position: absolute;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	user-select: none;
+}
+
+.orderForm {
+	width: 60%;
+	margin-top: 40px;
+}
+
+.orderForm__paragraph,
+.price__paragraph {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: left;
+	color: #fff;
+	width: 70%;
+}
+
+.price__paragraph {
+	width: 100%;
+	font-size: 20px;
+	line-height: 22px;
+	margin-top: 25px;
+}
+
+.price__paragraph:last-of-type {
+	text-align: right;
+}
+
+
+
+@media all and (max-width: 1240px) {
+	.product-page__card {
+		flex-direction: column;
+	}
+
+	.product-page__intro {
+		padding: 120px 6% 60px;
+	}
+
+	.product-page__card {
+		padding: 0;
+	}
+
+	.product-page__intro-content,
+	.product-page__intro-gallery,
+	.orderForm {
+		width: 100%;
+	}
+
+	.product-page__intro-gallery,
+	.product-page__intro-content {
+		padding: 40px 20px;
+	}
+
+	.product-page__intro-content {
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+
+	.product-page__intro-heading {
+		font-size: 20px;
+	}
+
+}
