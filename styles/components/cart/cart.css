@@ -19,9 +19,19 @@ a:hover {
 }
 
 .site-main,
-.o-container {
+.o-container,
+.cart-with-no-items {
 	background: #fff;
 	padding: 160px 8% 60px;
+}
+
+
+.cart-with-no-items {
+	display: none;
+}
+
+.cart-with-no-items__paragraph {
+	margin: 20px 0 30px;
 }
 /*
 .o-container {
@@ -33,6 +43,7 @@ a:hover {
 }
 
 .cart-title-left h1,
+.cart-with-no-items__heading,
 .c-header-checkout__logo {
 	font-weight: 600;
 	font-size: 60px;
@@ -515,6 +526,7 @@ label.error {
 	}
 
 	.order__heading,
+	.cart-with-no-items__heading,
 	.cart-title-left h1 {
 		font-size: 32px;
 		text-align: center;

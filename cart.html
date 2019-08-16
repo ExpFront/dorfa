@@ -88,6 +88,13 @@
 			</div>
 		</header>
 
+		<main class="cart-with-no-items">
+			<h1 class="cart-with-no-items__heading">В корзине нет товаров</h1>
+			<p class="cart-with-no-items__paragraph">Пожалуйста, выберите товары в нашем каталоге</p>
+			<a href="./products.html" class="l-button button button--blue button--fulfill cart-with-no-items__button">Каталог всех товаров</a>
+		</main>
+
+
 		<main id="site-main" class="site-main" aria-label="Main content" tabindex="-1">
 				 <div id="shopify-section-static-cart" class="shopify-section cart--section">
 						<form
@@ -107,9 +114,8 @@
 											 <li
 													class="cart-item"
 													data-cartitem
-													data-cartitem-id="43318672202"
-													data-cartitem-key="43318672202:5a3ebe86c13c2a5383b0161a1dddfeb3"
-													data-cartitem-price="99900">
+													data-cartitem-id="1"
+												>
 													<figure class="cart-item--image-wrapper">
 														 <a href="/products/phantom-3-professional?variant=43318672202">
 														 <img
@@ -229,8 +235,9 @@
 																</div>
 																<div class="cart-item--remove">
 																	 <a
-																			href="/cart/change?line=1&amp;quantity=0"
+																			href="#"
 																			class="cart-item--remove-link"
+																			onclick="removeItem(1)"
 																			data-cartitem-remove
 																			aria-label="remove Phantom 3 Professional"
 																			>
@@ -254,9 +261,8 @@
 												<li
 													 class="cart-item"
 													 data-cartitem
-													 data-cartitem-id="43318672202"
-													 data-cartitem-key="43318672202:5a3ebe86c13c2a5383b0161a1dddfeb3"
-													 data-cartitem-price="99900">
+													 data-cartitem-id="2"
+													>
 													 <figure class="cart-item--image-wrapper">
 															<a href="/products/phantom-3-professional?variant=43318672202">
 															<img
@@ -376,8 +382,9 @@
 																 </div>
 																 <div class="cart-item--remove">
 																		<a
-																			 href="/cart/change?line=1&amp;quantity=0"
+																			 href="#"
 																			 class="cart-item--remove-link"
+																			 onclick="removeItem(2)"
 																			 data-cartitem-remove
 																			 aria-label="remove Phantom 3 Professional"
 																			 >

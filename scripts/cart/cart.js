@@ -1,3 +1,9 @@
+function showNoItemsBlock() {
+	$('.order').remove();
+	$('.site-main').remove();
+	$('.cart-with-no-items').css('display', 'block');
+}
+
 function calculateTotalCount() {
 	const length = $('.form-field-input').length
 	let totalCount = 0;
@@ -23,6 +29,24 @@ function formatNumber(num) {
 }
 
 
+function removeItem(id) {
+	$(`.cart-item[data-cartitem-id=${id}]`).remove();
+
+
+	if ($('.cart-item').length > 0) {
+		const length = $('.form-field-input').length
+
+		for (var id = 0; id < length; id = id + 2) {
+			const initialCount = $('.form-field-input')[id].value;
+			const costPerOne =  $('.money')[id].innerText.split('₽')[0].replace(' ','')
+			const totalId = id === 2 ? 1 : 0
+
+			changeTotal(initialCount, costPerOne, totalId)
+		}
+	} else {
+		showNoItemsBlock();
+	}
+}
 
 
 function changeTotal(initialCount, costPerOne, totalId) {
@@ -50,6 +74,19 @@ function calculateFinalCost(e, totalId, inputId, costPerOne) {
 	changeTotal(initialCount, costPerOne, totalId)
 }
 
+
+
+function getPayMethod(payMethod) {
+	const allMethods = {
+		withoutNDS: 'Безналичный расчёт без НДС',
+		withNDS: 'Безналичный расчёт c НДС',
+		eMoney: 'Электронными деньгами',
+		creditCards: 'Банковскими картами'
+	}
+
+	return allMethods[payMethod]
+}
+
 $(document).ready(function() {
 	const length = $('.form-field-input').length
 
@@ -60,6 +97,23 @@ $(document).ready(function() {
 
 		changeTotal(initialCount, costPerOne, totalId)
 	}
+
+	$('#orderForm').on('submit', function(e) {
+		e.preventDefault();
+
+		const data = {
+			email: $('.email-input').val(),
+			phone: $('.phone-input').val(),
+			name: $('.name-input').val(),
+			payMethod: getPayMethod($("#radio-group-pay input[type='radio']:checked").attr('id')),
+			nameOfOrganization: $('.company-input').val(),
+			addressOfOrganization: $('.address-input').val(),
+			inn: $('.inn-input').val(),
+			comment: $('.form__comment').val()
+		}
+
+		console.log('Отправка данных в 1с', data)
+	})
 
 	$("#orderForm").validate({
 		rules:{
