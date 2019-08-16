@@ -41,18 +41,18 @@
 
 		<header class="header">
 			<div class="header__logo">
-				<a href="./index.html">
+				<a href="/">
 					<img class="logo" src="./assets/images/logo.svg"/>
 				</a>
 			</div>
 
 			<nav id="nav-mobile" class="nav-mobile" role="navigation">
 				<ul class="nav-mobile__menu" id="nav-mobile-menu" tabindex="-1" aria-label="main navigation" hidden>
-					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Серверы</a></li>
-					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Конфигураторы</a></li>
-					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Blade</a></li>
-					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">СХД</a></li>
-					<li class="nav-mobile__item"><a href="#" class="nav-mobile__link">Активное оборудование</a></li>
+					<li class="nav-mobile__item"><a href="./products.html?filter=servers" class="nav-mobile__link">Серверы</a></li>
+					<li class="nav-mobile__item"><a href="./products.html?filter=configurators" class="nav-mobile__link">Конфигураторы</a></li>
+					<li class="nav-mobile__item"><a href="./products.html?filter=blade" class="nav-mobile__link">Blade</a></li>
+					<li class="nav-mobile__item"><a href="./products.html?filter=storage-systems" class="nav-mobile__link">СХД</a></li>
+					<li class="nav-mobile__item"><a href="./products.html?filter=hardware" class="nav-mobile__link">Активное оборудование</a></li>
 				</ul>
 
 				<!-- MENU TOGGLE BUTTON -->
@@ -70,29 +70,28 @@
 
 				<!-- ANIMATED BACKGROUND ELEMENT -->
 				<div class="splash"></div>
-
 			</nav>
 
 
 			<div class="header__buttons">
 				<div class="header__button">
-					<a href="./products.html?filter=servers" class="js-main-slider-button button button--blue button--fulfill">Серверы</a>
+					<a href="./products.html?filter=servers" class="header__link">Серверы</a>
 				</div>
 
 				<div class="header__button">
-					<a href="./products.html?filter=configurators" class="js-main-slider-button button button--blue button--fulfill">Конфигураторы</a>
+					<a href="./products.html?filter=configurators" class="header__link">Конфигураторы</a>
 				</div>
 
 				<div class="header__button">
-					<a href="./products.html?filter=blade" class="js-main-slider-button button button--blue button--fulfill">Blade</a>
+					<a href="./products.html?filter=blade" class="header__link">Blade</a>
 				</div>
 
 				<div class="header__button">
-					<a href="./products.html?filter=storage-systems" class="js-main-slider-button button button--blue button--fulfill">СХД</a>
+					<a href="./products.html?filter=storage-systems" class="header__link">СХД</a>
 				</div>
 
 				<div class="header__button">
-					<a href="./products.html?filter=hardware" class="js-main-slider-button button button--blue button--fulfill">Активное оборудование</a>
+					<a href="./products.html?filter=hardware" class="header__link">Активное оборудование</a>
 				</div>
 
 				<a href="./cart.html" class="header__button header__button_with_icon">
@@ -160,47 +159,47 @@
 							<ul class="cd-filter-content cd-filters list">
 								<li>
 									<input class="filter" data-filter=".check1" type="checkbox" id="checkbox_servers">
-										<label class="checkbox-label" for="checkboxServers">Серверы</label>
+										<label class="checkbox-label" for="checkbox_servers">Серверы</label>
 								</li>
 
 								<li>
 									<input class="filter" data-filter=".check2" type="checkbox" id="checkbox_blade">
-									<label class="checkbox-label" for="checkboxBlade">Blade-системы</label>
+									<label class="checkbox-label" for="checkbox_blade">Blade-системы</label>
 								</li>
 
 								<li>
 									<input class="filter" data-filter=".check3" type="checkbox" id="checkbox_storage-systems">
-									<label class="checkbox-label" for="checkboxSHD">СХД</label>
+									<label class="checkbox-label" for="checkbox_storage-systems">СХД</label>
 								</li>
 
 								<li>
 									<input class="filter" data-filter=".check4" type="checkbox" id="checkbox_configurators">
-									<label class="checkbox-label" for="checkboxConfigurator">Конфигураторы</label>
+									<label class="checkbox-label" for="checkbox_configurators">Конфигураторы</label>
 								</li>
 
 								<li>
 									<input class="filter" data-filter=".check5" type="checkbox" id="checkbox_hardware">
-									<label class="checkbox-label" for="checkboxDevice">Активное оборудование</label>
+									<label class="checkbox-label" for="checkbox_hardware">Активное оборудование</label>
 								</li>
 
 								<li>
 									<input class="filter" data-filter=".check6" type="checkbox" id="checkbox_3G">
-									<label class="checkbox-label" for="checkbox3G">3G оборудование</label>
+									<label class="checkbox-label" for="checkbox_3G">3G оборудование</label>
 								</li>
 
 								<li>
 									<input class="filter" data-filter=".check7" type="checkbox" id="checkbox_ip">
-									<label class="checkbox-label" for="checkboxIP">IP телефония</label>
+									<label class="checkbox-label" for="checkbox_ip">IP телефония</label>
 								</li>
 
 								<li>
 									<input class="filter" data-filter=".check8" type="checkbox" id="checkbox_used">
-									<label class="checkbox-label" for="checkboxUsed">Б/У</label>
+									<label class="checkbox-label" for="checkbox_used">Б/У</label>
 								</li>
 
 								<li>
-									<input class="filter" data-filter=".check9" type="checkbox" id="checkboxSystems">
-									<label class="checkbox-label" for="checkboxSystems">Акустические системы</label>
+									<input class="filter" data-filter=".check9" type="checkbox" id="checkbox_systems">
+									<label class="checkbox-label" for="checkbox_systems">Акустические системы</label>
 								</li>
 							</ul>
 						</div>
