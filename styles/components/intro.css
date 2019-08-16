@@ -141,6 +141,12 @@
 	}
 }
 
+@media all and (min-width: 1680px) {
+	.video-foreground {
+		height: 110% !important;
+	}
+}
+
 /* @media (max-aspect-ratio: 16/9) { */
 
 /* } */
