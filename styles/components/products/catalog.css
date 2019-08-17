@@ -221,8 +221,8 @@
 @media all and (max-width: 660px) {
 	.products {
 		margin: 40px auto 0;
-		padding: 20px;
-		max-width: 290px;
+		padding: 20px 10px;
+		max-width: 100%;
 		width: 100%;
 	}
 
