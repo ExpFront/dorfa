@@ -196,7 +196,7 @@ xfilter
 	width: 60px;
 	/* image replacement */
 	overflow: hidden;
-	text-indent: 100%;
+	text-indent: 50px;
 	color: transparent;
 	white-space: nowrap;
 	background: transparent url("./../../assets/icons/filter.svg") no-repeat center center;
