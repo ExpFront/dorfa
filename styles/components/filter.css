@@ -164,15 +164,6 @@ xfilter
 	.cd-filter-trigger {
 		font-size: 18px;
 	}
-
-	.products {
-		max-width: 100%;
-		width: 290px
-	}
-
-	.products {
-		margin: 40px auto 0;
-	}
 }
 
 @media all and (max-width: 1060px) {
