@@ -3075,9 +3075,16 @@ p {
 }
 
 .button--orange {
-	background-color: #da420b;
-	color: #fff;
+	background-color: #da420b !important;
+	color: #fff !important;
 	border-radius: 100px
+}
+
+.button--darkblue {
+	background-color: #006baf !important;
+	border-color: #006baf !important;
+	color: #fff !important;
+	transition: .5s;
 }
 
 .button--navyblue {

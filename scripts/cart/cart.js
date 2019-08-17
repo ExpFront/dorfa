@@ -4,6 +4,8 @@ function showNoItemsBlock() {
 	$('.cart-with-no-items').css('display', 'block');
 }
 
+
+
 function calculateTotalCount() {
 	const length = $('.form-field-input').length
 	let totalCount = 0;
@@ -17,6 +19,8 @@ function calculateTotalCount() {
 	return totalCount;
 }
 
+
+
 function formatNumber(num) {
 	const sumArray = num.toString().split('').reverse();
 	sumArray.map((sumbol, id) => {
@@ -29,9 +33,21 @@ function formatNumber(num) {
 }
 
 
+
+
 function removeItem(id) {
 	$(`.cart-item[data-cartitem-id=${id}]`).remove();
 
+	const currentCartCount = +localStorage.getItem('cartCount');
+	const newCartCount = currentCartCount - 1
+
+	localStorage.setItem('cartCount', newCartCount);
+
+	if (newCartCount > 0) {
+		$('.small-cart__count').text(newCartCount)
+	} else {
+		$('.small-cart__count').css('display', 'none')
+	}
 
 	if ($('.cart-item').length > 0) {
 		const length = $('.form-field-input').length
@@ -75,7 +91,6 @@ function calculateFinalCost(e, totalId, inputId, costPerOne) {
 }
 
 
-
 function getPayMethod(payMethod) {
 	const allMethods = {
 		withoutNDS: 'Безналичный расчёт без НДС',
@@ -97,6 +112,19 @@ $(document).ready(function() {
 
 		changeTotal(initialCount, costPerOne, totalId)
 	}
+
+
+
+	// Не показываем товары если их нет
+	const currentCartCount = +localStorage.getItem('cartCount')
+
+	if (currentCartCount === 0) {
+		showNoItemsBlock();
+	}
+
+
+
+
 
 	$('#orderForm').on('submit', function(e) {
 		e.preventDefault();

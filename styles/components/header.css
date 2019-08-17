@@ -168,6 +168,7 @@
 }
 
 .small-cart__count {
+	display: none;
 	position: absolute;
 	left: -2px;
 	top: -2px;
