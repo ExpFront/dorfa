@@ -69,6 +69,7 @@
 
 .products {
 	position: relative;
+	margin-top: 0;
 	margin-left: 310px;
 	margin-right: auto;
 	perspective: 1000px;
@@ -200,10 +201,11 @@
 
 @media all and (min-width: 1060px) and (max-width: 1320px) {
 	.products {
-		width: 70%;
+		width: 80%;
 	}
 
 	.products-wrapper {
+		padding: 0;
 		justify-content: space-around;
 	}
 }
