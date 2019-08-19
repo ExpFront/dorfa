@@ -79,3 +79,13 @@
 		max-width: 70%;
 	}
 }
+
+.error {
+	border-color: red;
+}
+
+label.error {
+	display: block;
+	margin-top: 10px;
+	color: red;
+}
