@@ -217,12 +217,6 @@ a:hover {
 	flex-wrap: wrap;
 }
 
-.form__rekvisit {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
 .form__radio-block {
 	padding: 20px;
 	font-size: 14px;
