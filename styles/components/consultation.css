@@ -15,21 +15,9 @@
 		padding: 120px 8%;
 	}
 
-	.consultation__buttons {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
 	.consultation__button {
 		padding: 18px 21px;
 		font-size: 16px !important;
-	}
-
-	.consultation__button + .consultation__button {
-		margin: 0 !important;
-		margin-top: 20px !important;
 	}
 }
 
@@ -104,8 +92,28 @@
 
 @media (min-width:900px) {
 	.consultation__content {
-		width: 50%;
+		width: 70%;
 		/* padding-right: 30px */
+	}
+}
+
+
+@media (max-width:900px) {
+	.consultation__content {
+		width: 70%;
+		/* padding-right: 30px */
+	}
+
+	.consultation__buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.consultation__button + .consultation__button {
+		margin: 0 !important;
+		margin-top: 20px !important;
 	}
 }
 

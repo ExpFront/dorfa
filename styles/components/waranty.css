@@ -11,6 +11,18 @@
 	right: 25%;
 }
 
+@media all and (max-width: 1600px) {
+	.fa-chevron-right {
+		right: 15%;
+		top: 20%;
+	}
+
+	.fa-chevron-left {
+		left: 15%;
+		top: 20%;
+	}
+}
+
 @media (min-width:1100px) {
 	.waranty {
 		display: flex;
@@ -251,7 +263,7 @@
 
 @media (min-width:1100px) {
 	.waranty .waranty__carousel__wrapper {
-		height: 373px;
+		height: 300px;
 		box-sizing: border-box;
 		padding: 11% 8% 18%;
 		width: 100%
