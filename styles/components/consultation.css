@@ -100,7 +100,7 @@
 
 @media (max-width:900px) {
 	.consultation__content {
-		width: 70%;
+		width: 100%;
 		/* padding-right: 30px */
 	}
 
