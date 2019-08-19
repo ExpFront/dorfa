@@ -22,15 +22,14 @@
 		align-items: center;
 	}
 
-	.consultation__button,
-	.consultation__button button {
+	.consultation__button {
 		padding: 18px 21px;
 		font-size: 16px !important;
 	}
 
 	.consultation__button + .consultation__button {
 		margin: 0 !important;
-		margin-top: 30px;
+		margin-top: 20px !important;
 	}
 }
 
@@ -307,4 +306,51 @@
 		width: 36px;
 		height: 18px
 	}
+}
+
+.input__text {
+	margin: 0;
+	padding-bottom: .4rem;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.label-for-input {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.phone-input,
+.name-input {
+	margin: 0;
+	padding: 12px;
+	font-weight: 400;
+	color: #333;
+	width: 100%;
+	color: #333;
+	border: 2px solid #ccc;
+	border-radius: 6px;
+	transition-property: border-color;
+	transition-duration: .2s;
+	transition-timing-function: ease;
+	width: 100%;
+	font-size: 14px;
+}
+
+.phone-input:focus,
+.name-input:focus {
+	border-color: #0090f0;
+}
+
+.modal-section {
+	position: relative;
+}
+
+.consultation__form__heading {
+	font-size: 18px;
+}
+
+.consultation__form__inputs {
+	margin-top: 20px;
 }

@@ -199,9 +199,13 @@
 }
 
 
-@media all and (min-width: 1060px) and (max-width: 1320px) {
+@media all and (min-width: 1000px) and (max-width: 1320px) {
 	.products {
-		width: 80%;
+		width: 70%;
+	}
+
+	.product-card {
+		width: 47%;
 	}
 
 	.products-wrapper {
@@ -210,7 +214,7 @@
 	}
 }
 
-@media all and (min-width: 900px) and (max-width: 1060px) {
+@media all and (min-width: 900px) and (max-width: 1000px) {
 	.products {
 		width: 80%;
 	}

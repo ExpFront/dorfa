@@ -21,6 +21,7 @@
 		<link href="./styles/components/service.css" type="text/css"  rel="stylesheet" />
 		<link href="./styles/components/waranty.css" type="text/css"  rel="stylesheet" />
 		<link href="./styles/components/consultation.css" type="text/css"  rel="stylesheet" />
+		<link href="./styles/components/modal.css" type="text/css"  rel="stylesheet" />
 		<link href="./styles/components/footer.css" type="text/css"  rel="stylesheet" />
 		<script src="./scripts/jquery-1.8.3.min.js"></script>
 	</head>
@@ -705,30 +706,17 @@
 					<br>
 				</section>
 
-
-
-
-
-
-
-
-
-			<section class="consultation">
-				<div class="consultation__content">
-					<div class="consultation__text">
-						<p>Оставьте заявку на <b>бесплатную консультацию</b> — мы поможем вам подобрать оборудование</p>
-						<div class="consultation__buttons">
-							<a class="consultation__button" href="/include/modals/get-consultation.php">
-								<button type="button" class="l-button button button--blue button--fulfill">Получить консультацию</button>
-							</a>
-							<a href="./servers.html" class="consultation__button l-button button button--white">Помотреть весь каталог</a>
-						</div>
+		<section class="consultation">
+			<div class="consultation__content">
+				<div class="consultation__text">
+					<p>Оставьте заявку на <b>бесплатную консультацию</b> — мы поможем вам подобрать оборудование</p>
+					<div class="consultation__buttons">
+						<button type="button" id="btn-modal" class="consultation__button l-button button button--blue button--fulfill">Получить консультацию</button>
+						<a href="./products.html" class="consultation__button l-button button button--white">Помотреть весь каталог</a>
 					</div>
 				</div>
-			</section>
-
-
-
+			</div>
+		</section>
 
 
 		<footer class="footer">
@@ -743,21 +731,64 @@
 
 
 
-		<!-- <section class="modal">
-			<div class="modal__inner">
-				<div class="modal__dialog">
-					<button class="modal__close round-button" type="button">
+
+		<section class="modal-section">
+			<div class="modal-window-overlay" id="modal-window-overlay"></div>
+
+			<div class="modal-window" id="modal-window">
+				<button class="modal-close-btn" id="close-btn">
+					<i class="fa fa-times" title="закрыть"></i>
+				</button>
+
+				<form id="consultationForm" class="consultation__form">
+					<h2 class="consultation__form__heading">
+						Нужна бесплатная консультация?
+					</h2>
+
+					<div class="consultation__form__inputs">
+						<label class="label-for-input">
+							<p class="input__text">
+								Телефон
+								<span class="star">*</span>
+							</p>
+
+							<!-- <input minlength="2" class="name-input" type="text" placeholder="Имя" required /> -->
+							<input class="phone-input" name="phoneRUS" data-mask="+7 (000) 000 00 00" placeholder="+7 (___) ___ __ __" required />
+						</label>
+
+						<label class="label-for-input">
+							<p class="input__text">
+								Имя
+								<span class="star">*</span>
+							</p>
+
+							<input minlength="2" class="name-input" type="text" placeholder="Имя" required />
+						</label>
+
+						<button type="submit" class="l-button button button--blue button--fulfill form__submit">Перезвоните мне</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- <section class="modal-window">
+			<div class="modal-window__inner">
+				<div class="modal-window__dialog">
+					<button class="modal-window__close round-button" type="button">
 						Закрыть
 					</button>
-					<div class="modal__wrapper"></div>
+					<div class="modal-window__wrapper"></div>
 				</div>
 			</div>
 		</section> -->
+
 
 		<script src="./scripts/common.js"></script>
 		<script src="./scripts/jquery.smooth-scroll.min.js"></script>
 		<script src="./scripts/main.js"></script>
 		<script src="./scripts/cart/add-to-cart.js"></script>
 		<script src="./scripts/nav-mobile.js"></script>
+		<script src="./scripts/cart/jquery.mask.js"></script>
+		<script src="./scripts/cart/validate.min.js"></script>
+		<script src="./scripts/modal.js"></script>
 	</body>
 </html>

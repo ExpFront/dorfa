@@ -1,0 +1,76 @@
+
+/* Common */
+
+.btn {
+	font-size: 14px;
+	line-height: 1.4;
+	padding: 13px 20px;
+	border-radius: 4px;
+	transition: box-shadow 0.1s, top 0.1s;
+	box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+	top: 0;
+	background: #fff;
+}
+
+.btn:hover {
+	box-shadow: 0 3px 0 transparent;
+	top: 3px;
+}
+
+.btn:active {
+	background: #f2f2f2;
+}
+
+/* Modal */
+.modal-window {
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+	position: fixed;
+	top: calc(50% - 200px);
+	left: 0;
+	right: 0;
+	max-width: 270px;
+	margin: 0 auto;
+	padding: 30px;
+	background: #fff;
+	border-radius: 8px;
+	z-index: 10000;
+	box-shadow: 0 20px 40px rgba(23, 38, 47, .3), inset 0 0 0 1px #d7e5f4;
+}
+
+.modal-close-btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/* Overlay */
+.modal-window-overlay {
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9990;
+	background-color: rgba(0,0,0,0.5);
+}
+
+/** JS */
+.is-visible {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+@media all and (max-width: 450px) {
+	.modal-window {
+		max-width: 70%;
+	}
+}
