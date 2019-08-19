@@ -39,6 +39,11 @@
 	box-shadow: 0 20px 40px rgba(23, 38, 47, .3), inset 0 0 0 1px #d7e5f4;
 }
 
+.modal-window,
+.modal-window * {
+	box-sizing: border-box;
+}
+
 .modal-close-btn {
 	position: absolute;
 	right: 10px;
