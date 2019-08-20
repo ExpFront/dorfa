@@ -342,9 +342,9 @@
 @media (min-width:1100px) {
 	.waranty__carousel__nav .waranty__carousel__arrow {
 		transition: background .25s ease;
-		background: #0090f0;
+		background: #2b579a;
 		box-sizing: border-box;
-		border: 2px solid #0090f0;
+		border: 2px solid #2b579a;
 		border-radius: 50%;
 		width: 50px;
 		height: 50px
@@ -355,8 +355,8 @@
 	}
 
 	.waranty__carousel__nav .waranty__carousel__arrow:hover {
-		background-color: #0081d6;
-		border-color: #0081d6
+		background-color: #2b579a;
+		border-color: #2b579a
 	}
 
 	.waranty__carousel__nav .waranty__carousel__arrow:hover svg {
@@ -364,8 +364,8 @@
 	}
 
 	.waranty__carousel__nav .waranty__carousel__arrow:active {
-		background-color: #007acc;
-		border-color: #007acc
+		background-color: #2b579a;
+		border-color: #2b579a
 	}
 
 	.waranty__carousel__nav .waranty__carousel__arrow:active svg {

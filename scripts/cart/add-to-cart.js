@@ -8,12 +8,11 @@ function addToCart(e, willBeWhite) {
 
 	$(e).text('Добавлено!')
 	const currentCount = $('.small-cart__count').text()
+	const newCount = +currentCount + 1;
 
-	if (currentCount > 0) {
+	if (newCount > 0) {
 		$('.small-cart__count').css('display', 'block')
 	}
-
-	const newCount = +currentCount + 1;
 
 	localStorage.setItem('cartCount', newCount)
 	$('.small-cart__count').text(newCount)

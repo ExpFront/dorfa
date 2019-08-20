@@ -83,7 +83,7 @@
 .header__icon {
 	position: relative;
 	cursor: pointer;
-	color: #0090f0;
+	color: #2b579a;
 	font-size: 36px;
 	font-weight: 700;
 	padding: 0;
@@ -113,15 +113,15 @@
 
 
 .header__link {
-	border-bottom: 1px solid #006BAF;
+	border-bottom: 1px solid #2B579A;
 	padding-bottom: 3px;
-	color: #006BAF;
+	color: #2B579A;
 	font-size: 20px;
 }
 
 .header__link:hover {
 	border: none;
-	color: #006BAF;
+	color: #2B579A;
 	padding-bottom: 4px;
 }
 
@@ -147,9 +147,8 @@
 
 .header__button_with_icon {
 	position: relative;
-	background: #0090f0;
+	background: #2b579a;
 	cursor: pointer;
-	color: #0090f0;
 	fill: #000;
 	font-size: 36px;
 	font-weight: 700;
@@ -177,7 +176,7 @@
 	box-sizing: border-box;
 	padding: 0 5px;
 	border-radius: 1000px;
-	background-color: #0090f0;
+	background-color: #e21c21;
 	font-size: 12px;
 	line-height: 20px;
 	text-align: center;

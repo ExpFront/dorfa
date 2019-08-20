@@ -96,16 +96,16 @@ a:hover {
 }
 
 .cart-title-button {
-	background: #0090f0;
+	background: #2b579a;
 }
 
 .c-radio-button__input:checked + .c-radio-button__label {
-	border-color: #0090f0;
+	border-color: #2b579a;
 }
 
 .c-radio-button__input:checked + .c-radio-button__label .c-radio-button__icon::before {
-	border-color: #0090f0;
-	background: #0090f0;
+	border-color: #2b579a;
+	background: #2b579a;
 }
 
 .cartitems--container {
@@ -209,7 +209,7 @@ a:hover {
 .email-input:focus,
 .phone-input:focus,
 .name-input:focus {
-	border-color: #0090f0;
+	border-color: #2b579a;
 }
 
 .form__inputs {
@@ -278,7 +278,7 @@ a:hover {
 
 [type="radio"]:checked + .label-for-radio p:before,
 [type="radio"]:checked + .label-for-radio {
-	border-color: #0090f0;
+	border-color: #2b579a;
 }
 
 
@@ -287,7 +287,7 @@ a:hover {
 		content: '';
 		width: 14px;
 		height: 14px;
-		background: #0090f0;
+		background: #2b579a;
 		position: absolute;
 		top: 21px;
 		right: 26px;
@@ -347,7 +347,7 @@ label.error {
 	z-index: 1000;
 	padding-bottom: 10px;
 
-	border: 2px solid #0090f0;
+	border: 2px solid #2b579a;
 	box-shadow: 0 20px 40px rgba(23, 38, 47, .3), inset 0 0 0 1px #d7e5f4;
 	background: white;
 	width: 290px;
@@ -395,7 +395,7 @@ label.error {
 }
 
 .sideblock__text {
-	background: #0090f0;
+	background: #2b579a;
 	padding: 20px;
 	color: white;
 	display: flex;

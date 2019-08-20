@@ -337,7 +337,7 @@
 
 .main-services__number {
 	top: 25px;
-	background: #0090f0;
+	background: #2b579a;
 	cursor: pointer;
 	color: white;
 	font-size: 36px;
@@ -358,7 +358,7 @@
 	width: 0;
 	height: 0;
 	left: 0;
-	border-bottom: 30px solid #0090f0;
+	border-bottom: 30px solid #2b579a;
 	border-left: 42px solid transparent;
 	border-right: 42px solid transparent;
 	position: absolute;
@@ -371,7 +371,7 @@
 	position: absolute;
 	left: 0;
 	bottom: -30px;
-	border-top: 30px solid #0090f0;
+	border-top: 30px solid #2b579a;
 	border-left: 42px solid transparent;
 	border-right: 42px solid transparent;
 }

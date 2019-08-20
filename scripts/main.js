@@ -544,7 +544,7 @@ var AutoHeight = function() {
                     i = document.createElementNS("http://www.w3.org/2000/svg", "svg"),
                     n = 10 * Math.PI;
                 for (var r in e) i.style.setProperty(r, e[r]);
-                i.setAttribute("viewBox", "0 0 10 10"), i.innerHTML = '<circle cx="5" cy="5" r="5" fill="none" stroke="#0090f0" stroke-width="0.5" stroke-dasharray="' + n + '" stroke-dashoffset="' + n + '"></circle>', this.button.appendChild(i), requestAnimationFrame(function() {
+                i.setAttribute("viewBox", "0 0 10 10"), i.innerHTML = '<circle cx="5" cy="5" r="5" fill="none" stroke="#2b579a" stroke-width="0.5" stroke-dasharray="' + n + '" stroke-dashoffset="' + n + '"></circle>', this.button.appendChild(i), requestAnimationFrame(function() {
                     t.button.classList.add("in-progress"), setTimeout(function() {
                         t.button.classList.add("hide-svg"), setTimeout(function() {
                             for (var e in t.button.classList.remove("in-progress", "hide-svg"), t.button.classList.add("done"), t.props.default) t.button.style[e] = t.props.default[e];
