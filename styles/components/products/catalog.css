@@ -154,7 +154,7 @@
 	}
 }
 
-@media (max-width: 1060px) {
+@media all and (max-width: 1060px) {
 	.catalog {
 		padding: 120px 8%;
 		text-align: center;
@@ -183,7 +183,7 @@
 	}
 
 	.cd-filter.filter-is-visible {
-		position: static;
+		position: static !important;
 		border-radius: 20px;
 		width: 100%;
 	}

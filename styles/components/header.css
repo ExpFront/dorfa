@@ -135,6 +135,13 @@
 	justify-content: center;
 }
 
+
+.header__button-subtext {
+	position: absolute;
+	font-size: 10px;
+	top: 74px;
+}
+
 .header__button:not(.header__button_with_icon) {
 	display: flex;
 	align-items: center;
